@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<widget xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0" id="ar.edu.utn.sanfrancisco.clima" version="1.0.0">
+    <name>Clima UTN</name>
+    <description>
+			Clima de San Francisco, Córdoba, Argentina - Facultad Regional San Francisco
+    </description>
+    <author email="seu@sanfrancisco.utn.edu.ar" href="http://seu.sanfrancisco.utn.edu.ar/">
+      Secretar&iacute;a de Extensi&oacute;n Universitaria
+    </author>
+    <content src="index.html"/>
+    <plugin name="cordova-plugin-whitelist" spec="1"/>
+    <access origin="*"/>
+		<preference name="Orientation" value="portrait" />
+    <allow-intent href="http://*/*"/>
+    <allow-intent href="https://*/*"/>
+    <allow-intent href="tel:*"/>
+    <allow-intent href="sms:*"/>
+    <allow-intent href="mailto:*"/>
+    <allow-intent href="geo:*"/>
+    <platform name="android">
+        <allow-intent href="market:*"/>
+    </platform>
+    <platform name="ios">
+        <allow-intent href="itms:*"/>
+        <allow-intent href="itms-apps:*"/>
+    </platform>
+</widget>

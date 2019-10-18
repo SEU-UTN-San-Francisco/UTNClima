@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+	<head>
+    <link rel="stylesheet" type="text/css" href="mobileui/style.css">
+		<meta name="format-detection" content="telephone=no">
+		<meta charset="utf-8">
+		<meta name="msapplication-tap-highlight" content="no">
+		<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+		<link rel="stylesheet" type="text/css" href="css/clima.css">
+		<link rel="stylesheet" type="text/css" href="css/all.css">
+		<title>Estado del tiempo</title>
+	</head>
+
+	<body>
+		<div class="popover" id="popover1">
+			<div class="list">
+				<div class="item">
+					<a href="https://www.pronosticoextendido.net/radsat/?lat=-31.625321&lon=-62.808837&z=8&ver=radar,rayos">
+						Satélite
+					</a>
+				</div>
+				<div class="item">
+					<a href="https://instagram.com/utn_clima">
+						Instagram
+					</a>	
+				</div>
+				<div class="item">
+					<a href="mailto: climatologia@sanfrancisco.utn.edu.ar">
+						Correo electronico
+					</a>	
+				</div>
+			</div>
+		</div>
+
+		<div class="header light-blue">
+			<h1>Estado del tiempo</h1>
+			<div class="right">
+				<a href="http://climatologia.sanfrancisco.utn.edu.ar/contenidos/estado-del-tiempo-2" class="icono"><i class="fas fa-globe"></i></a>
+				<a href="https://twitter.com/UTNclima"><i class="icon ion-social-twitter white"></i></a>
+				<a onclick="openPopover('popover1')"><i class="icon ion-android-more-vertical white"></i></a>
+			</div>
+		</div>
+
+		<div class="content has-header">
+			<div id="fecha"></div>
+			<table id="estado_tiempo">
+				<thead>
+					<tr>
+						<td colspan="2" class="temperatura">
+							<label id="temperatura"></label>&nbsp;
+							<label id="sensacion_termica"></label>
+						</td>
+					</tr>
+				</thead>
+				<tbody class="datos">
+					<tr>
+						<th>Humedad: </th>
+						<td id="humedad"></td>
+					</tr>
+					<tr>
+						<th>Presión: </th>
+						<td id="presion"></td>
+					</tr>
+					<tr>
+						<th>Viento: </th>
+						<td id="viento"></td>
+					</tr>
+				</tbody>
+				<tfoot>
+					<tr>
+						<td class="sol">
+							<img class="img_sol" src="imgs/salida.png" alt=""><br>
+							<span id="salida"></span>
+						</td>
+						<td class="sol">
+							<img class="img_sol" src="imgs/puesta.png" alt=""><br>
+							<span id="puesta"></span>
+						</td>
+					</tr>
+				</tfoot>
+			</table>
+		</div>
+
+		<script type="text/javascript" src="cordova.js"></script>
+		<script type="text/javascript" src="mobileui/mobileui.js"></script>		
+		<script src="js/jquery.js"></script>
+		<script src="js/clima.js"></script>
+		<script src="js/ionic/ionic.js"></script>
+	</body>
+</html>
