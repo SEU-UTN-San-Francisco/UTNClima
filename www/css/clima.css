@@ -3,8 +3,12 @@ body, table, td, textarea, input, select {
 	font-family: "Myriad Pro", "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
 }
 
-html, body, table {
+html, body{
 	height: 100%;
+}
+
+table {
+	height: 90%;
 }
 
 a {
@@ -13,12 +17,6 @@ a {
 
 table {
 	width: 100%;
-}
-
-tbody:before, tfoot:before {
-	line-height:1em; 
-	content:"\200C"; 
-	display:block;
 }
 
 th {
@@ -75,5 +73,5 @@ a.icono {
 
 #fecha {
 	font-size: 1.2em; 
-	margin: 1em;
+	margin: 1em 1em 0 1em;
 }
